@@ -3,10 +3,10 @@ const bcrypt = require("bcrypt");
 const salt = bcrypt.genSaltSync(10);
 
 const userSave = {
-    save: async ({ phone, user, password, fullName }) => {
+    save: async ({ phone, email, password, fullName }) => {
         var userM = new userModel({
             phone,
-            user,
+            email,
             password: bcrypt.hashSync(password, salt),
             fullName
         });

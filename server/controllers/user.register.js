@@ -15,6 +15,6 @@ userRegisterRouter.post('/',async (req, res) => {
     const saveData = await userSave.save(data);
     res.status(200);
     res.send(saveData);
-})
+});
 
 module.exports = userRegisterRouter;
