@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const userModel = require('../data/user.model');
+const userModel = require('../schema/user.model');
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
 const userLoginRouter = new express.Router();

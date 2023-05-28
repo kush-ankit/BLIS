@@ -1,5 +1,5 @@
 const express = require('express');
-const userModel = require('../data/user.model.js')
+const userModel = require('../schema/user.model.js')
 const userLoginRouter = require('./user.login');
 const userRegisterRouter = require('./user.register');
 
