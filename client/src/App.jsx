@@ -15,7 +15,7 @@ function App() {
        <NavBar/>
        
        <div className='cards-container'>
-      <LoginPage/>
+      <LoginPage type="shop"/>
       </div>
 
       

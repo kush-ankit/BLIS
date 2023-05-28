@@ -1,14 +1,15 @@
 import React from 'react'
+import ImageInput from '../../imageInput/ImageInput'
 import '../loginPage/LoginPage.css' 
 
 function LoginPage({type}) {
-  return (<>
+  return (
   <div className="title-container" >
     <h1 className="title">Log In</h1>
-  </div>
+  
   <div className="login-form">
    <form method='POST' action='/login'>
-    <input type="file" className="user-image"  placeholder="user image"  />
+    <ImageInput type="Profile Picture" />
     <input type="text" className="user-name" placeholder="user name" />
     <input type="number" className="user-phone"  placeholder="Phone Number"/>
     <input type="email" className="user-email" placeholder="Email Address" />
@@ -16,12 +17,16 @@ function LoginPage({type}) {
     <input type="text" className="state"  placeholder="State"/>
     <input type="text" className="city"  placeholder="City"/>
     <input type="number" className="pincode" placeholder="Postal Code"/>
-    <input type="file" className="user-document" placeholder="id proff" />
+    <ImageInput type="document"/>
     <input type="submit" className="submit" value="Login" placeholder="Login"/>
+    {(type==='shop')?
+     <h1>Ask additional shop details</h1>
+    : <h1>Good to go</h1>}
 
    </form>
   </div>
-  </>
+  </div>
+  
     
     
   )
