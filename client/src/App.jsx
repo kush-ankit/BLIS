@@ -5,11 +5,10 @@ import LibCard from './components/libCard/libCard';
 import NavBar from './components/navBar/NavBar';
 import LoginPage from './components/pages/loginPage/LoginPage';
 import SignUpPage from './components/pages/loginPage/SignUpPage';
+import TicketQRCode from '../src/components/ticketQrGenerator/TicketQRCode';
 
 
 function App() {
-
-
   return (
     <>
       <form action="http://localhost:3001/user/register/uploadProfilePicture" method="POST" enctype="multipart/form-data">
@@ -30,8 +29,12 @@ function App() {
           <button type="submit">Submit</button>
         </div>
       </form>
-    </>
+      </>
   )
-}
+  
+  }
+ 
+
+
 
 export default App
