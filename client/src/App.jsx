@@ -4,6 +4,8 @@ import './App.css'
 import LibCard from './components/libCard/libCard';
 import NavBar from './components/navBar/NavBar';
 import LoginPage from './components/pages/loginPage/LoginPage';
+import SignUpPage from './components/pages/loginPage/SignUpPage';
+
 
 function App() {
  
@@ -15,9 +17,9 @@ function App() {
        <NavBar/>
        
        <div className='cards-container'>
-      <LoginPage type="shop"/>
+        <LoginPage/>
       </div>
-
+       
       
     </div>
     </>
