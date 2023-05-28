@@ -12,8 +12,8 @@ const handleFileChange= (event)=>{
 
   return (
     <div>
-        <input type="file" id="user-image" className="user-image" onChange={handleFileChange} />
-        <label htmlFor="user-image" id="file-placeholder">{fileName}</label>
+        <input type="file" id={type} className="user-image" onChange={handleFileChange} />
+        <label htmlFor={type} id="file-placeholder">{fileName}</label>
     </div>
   )
 }
