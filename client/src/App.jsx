@@ -3,6 +3,7 @@ import './App.css'
 
 import LibCard from './components/libCard/libCard';
 import NavBar from './components/navBar/NavBar';
+import LoginPage from './components/pages/loginPage/LoginPage';
 
 function App() {
  
@@ -14,12 +15,7 @@ function App() {
        <NavBar/>
        
        <div className='cards-container'>
-      <LibCard/>
-      <LibCard/>
-      <LibCard/>
-      <LibCard/>
-      <LibCard/>
-      <LibCard/>
+      <LoginPage/>
       </div>
 
       

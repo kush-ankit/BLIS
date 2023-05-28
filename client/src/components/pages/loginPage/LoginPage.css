@@ -1,0 +1,10 @@
+
+.title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-form input{
+    display: flex;
+}
