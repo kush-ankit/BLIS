@@ -1,4 +1,4 @@
-const userModel = require("../data/user.model.js");
+const userModel = require("../schema/user.model.js");
 const bcrypt = require("bcrypt");
 const salt = bcrypt.genSaltSync(10);
 

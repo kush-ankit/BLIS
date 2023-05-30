@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const userRouter = require('./controllers/user.controller');
 mongoose.connect('mongodb://127.0.0.1:27017/Library');
 const app = express();
+app.set("view engine", "ejs");
+
 
 app.use(cors());
 
@@ -21,4 +23,4 @@ app.get('/', (req, res) => {
 
 app.listen(3001, (req, res) => {
     console.log("listening on port 3001");
-})
+});
